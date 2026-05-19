@@ -1,4 +1,4 @@
-# 🔐 Password Strength Meter
+# Password Strength Meter
 
 Componente React que evalúa y muestra la fortaleza de una contraseña en tiempo real, construido siguiendo estrictamente **Test Driven Development (TDD)**.
 
@@ -8,7 +8,7 @@ Componente React que evalúa y muestra la fortaleza de una contraseña en tiempo
 
 ```bash
 # Clona el repositorio
-git clone https://github.com/TU_USUARIO/password-strength-meter.git
+git clone https://github.com/HipWilson/password-strength-meter.git
 cd password-strength-meter
 
 # Instala dependencias (con Bun)
@@ -73,16 +73,16 @@ Este proyecto sigue estrictamente el ciclo **Red → Green → Refactor**:
 ### 1. Configuración del proyecto
 Se configuró manualmente Vite + Vitest + React Testing Library + jsdom desde cero, sin templates preconfigurados.
 
-### 2. 🔴 Red — Tests escritos primero (FALLAN)
+### 2. Tests escritos primero (FALLAN)
 Se escribieron **todos** los tests antes de escribir cualquier código de implementación:
 
 - `src/__tests__/calculateStrength.test.ts` — Tests unitarios para la función pura
 - `src/__tests__/PasswordStrengthMeter.test.tsx` — Tests del componente con RTL
 
-En este estado, los tests fallan porque los archivos de implementación **no existen todavía**.
-Este commit tiene el mensaje: `test: add all tests before implementation (RED phase - tests failing)`
+En este estado, los tests fallan porque los archivos de implementación **no tienen informacion todavía**.
+Este commit tiene el mensaje: `test: add all tests before implementation `
 
-### 3. 🟢 Green — Implementación mínima para pasar los tests
+### 3. Implementación mínima para pasar los tests
 Se implementaron:
 
 - `src/utils/calculateStrength.ts` — Lógica pura separada del componente
@@ -90,10 +90,6 @@ Se implementaron:
 
 Todos los tests pasan en verde.
 
-### 4. 🔵 Refactor
-Se mejoró el código sin romper tests: estilos, accesibilidad, barra de progreso, TypeScript strict.
-
----
 
 ## Reglas de fortaleza
 
